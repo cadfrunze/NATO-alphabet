@@ -1,2 +1,2 @@
 with open('work_log.txt', 'a') as file:
-    file.writelines('\n24.02')
+    file.write('\n25.02')
