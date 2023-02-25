@@ -12,8 +12,7 @@ data_dict = {valoarea.letter: valoarea.code for (nimic, valoarea) in data_words.
 
 def nato_alph(user_fun):
     user_fun = user_fun.replace(' ', '')
-    user_list = [item for item in user_fun]
-    new_dict = [{letter: data_dict[letter]} for letter in user_list if letter in data_dict.keys()]
+    new_dict = [{letter: data_dict[letter]} for letter in user_fun if letter in data_dict.keys()]
     return new_dict
 
 
