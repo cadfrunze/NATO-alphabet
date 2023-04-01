@@ -20,4 +20,11 @@ while True:
     user_answer = input('Zii ceva: ').upper()
     if user_answer == 'EXIT.':
         break
-    print(nato_alph(user_fun=user_answer))
+    for letter in user_answer:
+        try:
+            data_dict[letter]
+        except KeyError:
+            print(f'Imi pare rau dar caracterul \'{letter}\' nu se gaseste in baza de date ')
+            break
+    else:
+        print(nato_alph(user_fun=user_answer))
